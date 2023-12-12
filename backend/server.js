@@ -11,6 +11,5 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/api/goals", require("./routes/goalRoutes"));
 
 app.use(errorHandler);
-
 app.listen(port, () => console.log(`Server running on port ${port}!!!`));
 
